@@ -1,20 +1,7 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-function httpGet(theUrl)
-{
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
-}
-
-function test()
-{
-	document.cookie = "username=John Smith; expires=Thu, 18 Dec 2080 12:00:00 UTC; path=/";
-	alert(document.cookie);
-}
-</script>
-
-<body onload="test()">
-
-</body>
+<html lang="en">
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<button type="button" onclick='document.cookie=";lastname=Smith;"'>Create Cookie 2</button>
+		<button type="button" onclick="alert(document.cookie);">Display All Cookies</button>
+	</body>
+</html>
